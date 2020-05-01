@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Binary to Decimal">
+    <meta name="author" content="IWS">
+    <title>Binary To Decimal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    var num = Number(prompt("enter a number:"));
+    console.log(num + "in decimal to decimal " + num);
+    console.log(num + "in decimal to binary " + num.toString(2));
+    console.log(num + "in decimal to octal " + num.toString(8));
+    console.log(num + "in decimal to hexa-decimal " + num.toString(16));
+</script>
+<script src="app.js"></script>
+
+<body>
+    <div id="container">
+        <h1>Binary TO Decimal Converter</h1>
+        <br> <br>
+        <input id="no-of-input" type="text" placeholder="Enter the number of input">
+        <br> <br>
+        <button type="button" onclick="convert();" id="convert-button">Convert to decimal!</button>
+    </div>
+
+    <div id="answer-container">
+
+    </div>
+
+    <input type="text" name="fname" value="sample" alt="empty form">
+    <p title="mumbai">sample</p>
+</body>
+
+</html>
