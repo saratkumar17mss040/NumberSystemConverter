@@ -28,4 +28,4 @@ Bonus features
 [] one button
 [] display all outputs
 [] colors of 0's and 1's
-[] responsive
+[] should be responsive
