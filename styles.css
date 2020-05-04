@@ -5,7 +5,6 @@
 body{
     margin: 0;
     padding: 0;
-    font-size: 20px;
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
     background: linear-gradient(271deg, #51e5ff,#440381, #eef300,#dd7373) no-repeat center
@@ -61,6 +60,7 @@ body{
 }
 
 #flex-container p {
+    font-size: 1.1rem;
     position: absolute;
     top:40px;
     text-transform: capitalize;
