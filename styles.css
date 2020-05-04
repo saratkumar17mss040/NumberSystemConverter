@@ -1,78 +1,104 @@
-*{
+:root{
+    font-size: 16px;
+}
+
+body{
     margin: 0;
     padding: 0;
-}
-
-h1,label,button{
-font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-}
-
-#container {
-    position: relative;
-    margin:0 auto;
-    display: block;
-    background-color: wheat;
-    padding: 15px;
-    width: 50%;
-    margin-top: 50px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    height: 270px;
-}
-
-#container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-
-label {
-    /* font: font-style font-variant font-weight font-size/line-height font-family; */
-    /* font: bold small-caps normal 45px  1.5px Poppins; */
-    /* display: block; */
     font-size: 20px;
     font-family: 'Poppins',sans-serif;
-    font-weight: lighter;
-    justify-self: start;
+    font-weight: bolder;
+    background: linear-gradient(271deg, #51e5ff,#440381, #eef300,#dd7373) no-repeat center
+    center fixed;
+    background-size: 600% 600%;
+    -webkit-animation: simpleGradientAnimation 10s ease infinite;
+    -moz-animation: simpleGradientAnimation 10s ease infinite;
+    animation: simpleGradientAnimation 10s ease infinite;
+    /* background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%) no-repeat center
+    center fixed; */
+} 
+
+@keyframes simpleGradientAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
 }
 
-button {
-    padding: 7px;
-    background-color: green;
+ @-webkit-keyframes simpleGradientAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+} 
+
+@-moz-keyframes simpleGradientAnimation {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+} 
+
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(228, 132, 207);
+    width: 70vw;
+    height: 40vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 3px solid black;
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#flex-container:hover {
+    /* box-shadow: 2px 2px 3px 8px rgb(245, 133, 226); */ 
+    box-shadow: 16px 2px 3px 2px rgba(12,0,0,0.52);
+}
+
+#flex-container p {
+    position: absolute;
+    top:40px;
+    text-transform: capitalize;
+}
+
+#flex-container input {
+    font-size: 80%;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border: 3px solid rgb(44, 119, 231);
+    border-radius: 60px;
+}
+
+#options {
+   display: flex;
+   width: 120px;
+   height: 30px;
+   border: 1px solid #999;
+   font-size: 15px;
+   color: #1c87c9;
+   background-color: #eee;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+
+button.selectType {
+    display: flex;
+    background-color: #1c87c9;
+    border: none;
     color: white;
-    border-radius: 8px;
-}
-
-input {
-    max-width: 50%;
-    height: 30px;
-}
-
-/* input[type="text"]::placeholder {  
-    text-align: left; 
-}  */
-
-
-/* #no-of-input {
-    display: block;
-    position: absolute;
-    bottom: 5px;
-} */
-
-#input-field-button {
-    position: absolute;
-    bottom: 20px;
-}
-
-#convert-button {
-    position: absolute;
-    right: 250px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 10px;
 }
 
 
