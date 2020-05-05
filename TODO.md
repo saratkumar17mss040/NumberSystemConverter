@@ -9,7 +9,6 @@
      * [x] create a dropdown for selecting different number system to convert
      * [x] create a dynamic element using createElement in javascript
      * [x] remove element using removeChild in javascript
-     * [ ] Create JSON file with sounds directory listing
 
 ## Stretch
      * [ ] Create conversions for all input type numbers system
