@@ -26,7 +26,7 @@ function addElement(parentId, elementTag, elementId,
     let newElement = document.createElement(elementTag);
     newElement.setAttribute('id', elementId);
     newElement.style.color = 'black';
-    newElement.style.marginTop = '250px';
+    newElement.style.marginTop = '251px';
     newElement.style.textAlign = 'center';
     newElement.style.display = 'flex';
     newElement.style.whiteSpace = 'nowrap';
