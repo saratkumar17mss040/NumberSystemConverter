@@ -1,5 +1,5 @@
 # TODO
-    - [x] Create a basic single page website.
+    [x] Create a basic single page website.
     [x] Use flexbox.
     [x] Need to be responsive.
     [x] Get the input from the user using input type.
